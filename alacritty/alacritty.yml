@@ -1,0 +1,152 @@
+# ~/.config/alacritty/alacritty.yml
+
+# Window
+window:
+  opacity: 0.9
+  padding:
+    x: 5
+    y: 5
+  class:
+    instance: Alacritty
+    general: Alacritty
+
+# Scrolling
+scrolling:
+  history: 5000
+  multiplier: 3
+
+# Cursor
+cursor:
+  style:
+    shape: Block
+    blinking: Always 
+  blink_interval: 500
+  unfocused_hollow: true
+
+# Fonts
+font:
+  normal:
+    family: Source Code Pro 
+    style: Regular
+  bold:
+    family: Source Code Pro 
+    style: Bold 
+  italic:
+    family: Source Code Pro 
+    style: Italic
+  bold_italic:
+    family: Source Code Pro 
+    style: Bold Italic
+  size: 16
+
+# Color Schemes
+schemes:
+
+  # Hyper
+  hyper: &hyper 
+    primary:
+      background: '#000000'
+      foreground: '#ffffff'
+
+    cursor:
+      text: '#f81ce5'
+      cursor: '#ffffff'
+
+    normal:
+      black:    '#000000'
+      red:      '#fe0100'
+      green:    '#33ff00'
+      yellow:   '#feff00'
+      blue:     '#0066ff'
+      magenta:  '#cc00ff'
+      cyan:     '#00ffff'
+      white:    '#d0d0d0'
+
+    bright:
+      black:    '#808080' 
+      red:      '#fe0100'
+      green:    '#33ff00'
+      yellow:   '#feff00'
+      blue:     '#0066ff'
+      magenta:  '#cc00ff'
+      cyan:     '#00ffff'
+      white:    '#000000'
+
+  # Monokai Pro
+  monokai-pro: &monokai-pro
+    primary:
+      background: '#080808'
+      foreground: '#FCFCFA'
+
+    normal:
+      black:    '#403E41'
+      red:      '#FF6188'
+      green:    '#A9DC76'
+      yellow:   '#FFD866'
+      blue:     '#FC9867'
+      magenta:  '#AB9DF2'
+      cyan:     '#78DCE8'
+      white:    '#FCFCFA'
+
+    bright:
+      black:    '#727072' 
+      red:      '#FF6188'
+      green:    '#A9DC76'
+      yellow:   '#FFD866'
+      blue:     '#FC9867'
+      magenta:  '#AB9DF2'
+      cyan:     '#78DCE8'
+      white:    '#FCFCFA'
+
+  # Xterm
+  xterm: &xterm
+    primary:
+      background: '#000000'
+      foreground: '#ffffff'
+
+    normal:
+      black:    '#000000'
+      red:      '#cd0000'
+      green:    '#00cd00'
+      yellow:   '#cdcd00'
+      blue:     '#0000ee'
+      magenta:  '#cd00cd'
+      cyan:     '#00cdcd'
+      white:    '#e5e5e5'
+
+    bright:
+      black:    '#7f7f7f'
+      red:      '#ff0000'
+      green:    '#00ff00'
+      yellow:   '#ffff00'
+      blue:     '#5c5cff'
+      magenta:  '#ff00ff'
+      cyan:     '#00ffff'
+      white:    '#ffffff'
+  # Tokyo Night
+  tokyo-night: &tokyo-night
+    primary:
+      background: '#1a1b26'
+      foreground: '#a9b1d6'
+
+    normal:
+      black:    '#32344a'
+      red:      '#f7768e'
+      green:    '#9ece6a'
+      yellow:   '#e0af68'
+      blue:     '#7aa2f7'
+      magenta:  '#ad8ee6'
+      cyan:     '#449dab'
+      white:    '#787c99'
+
+    bright:
+      black:    '#444b6a' 
+      red:      '#ff7a93'
+      green:    '#b9f27c'
+      yellow:   '#ff9e64'
+      blue:     '#7da6ff'
+      magenta:  '#bb9af7'
+      cyan:     '#0db9d7'
+      white:    '#acb0d0'
+      
+colors: *monokai-pro
